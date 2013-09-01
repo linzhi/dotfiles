@@ -1,0 +1,122 @@
+% Compile with xelatex
+
+\documentclass{beamer}
+
+\usetheme{CambridgeUS}
+\setbeamercolor{title}{bg=red!65!black,fg=white}
+
+\usepackage[BoldFont,SlantFont]{xeCJK}
+\usepackage{time}             
+\usepackage{graphicx}
+\usepackage{multimedia}
+\usepackage{subfigure}
+\usepackage{mathrsfs}
+\usepackage{amssymb,amsmath}  
+
+\setCJKmainfont[BoldFont=WenQuanYi Micro Hei]{WenQuanYi Micro Hei}
+\setCJKmonofont{WenQuanYi Micro Hei Mono}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\der}[2]{\frac{d #1}{d #2}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\mat}[1]{\textbf{#1}}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\EM}[1]{{\color{black!20!blue}#1}}
+\newcommand{\FOC}[1]{{\color{black!20!red}#1}}
+
+\title{title}
+\author{Linzhi}
+\institute[XXX]{line 1\\
+     line 2}       
+\date{\today}
+
+\begin{document}
+
+% begin frame
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section[Outline]{}
+
+% begin frame
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\subsection{research issues}
+
+% begin frame
+\begin{frame}
+  \frametitle{background}
+  \begin{enumerate}
+    \item<1-> 1
+    \item<2-> 1
+  \end{enumerate}
+\end{frame}
+
+\section{contents}
+\subsection{test sample}
+
+% begin frame
+\begin{frame}
+  \frametitle{overview of the key steps}
+  
+  \begin{enumerate}
+    \item<1-> 1
+      \begin{itemize}
+        \item<2-> 2
+        \item<2-> 2
+      \end{itemize}
+    \item<1-> 1
+      \begin{itemize}
+        \item<2-> 2
+        \item<2-> 2
+      \end{itemize}
+    \item<1-> 1
+      \begin{itemize}
+        \item<2-> 2
+        \item<2-> 2
+      \end{itemize}
+   \end{enumerate}
+  
+\end{frame}
+
+% begin frame
+\begin{frame}
+  \frametitle{key elements in research issues}
+  
+  \begin{enumerate}
+  \item<1-> 1
+    \begin{itemize}
+      \item<2-> 2
+    \end{itemize}
+  \item<1-> 1
+    \begin{itemize}
+      \item<2-> 2
+      \item<2-> 2
+        \begin{equation*}
+        E=\sum_{v_i \in V} \left \| \bigtriangledown u_i-\mathbf{u}_{i}^{f}\right \|^{2}+\left \| \bigtriangledown v_i-\mathbf{v}_{i}^{f}\right \|^{2}+\left \| \bigtriangledown w_i-\mathbf{w}_{i}^{f}\right \|^{2}
+        \end{equation*}
+    \end{itemize}
+  \end{enumerate}
+  
+\end{frame}
+
+% begin frame
+\section{Last}
+
+\begin{frame}
+  \frametitle{test sample}
+  
+  \begin{center}
+    linzhi
+  \end{center}
+  \nocite{*}
+  \bibliography{references}
+\end{frame}
+
+
+\end{document}
